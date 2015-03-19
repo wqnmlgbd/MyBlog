@@ -13,4 +13,6 @@ public interface Bl_userBiz {
 	public int getbizdelbl_user(int id);
 
 	public int getbizupdatebl_user(Bl_user user);
+	
+	public Bl_user getbizselectidbl_user(int id);
 }

@@ -41,4 +41,10 @@ public class Bl_userDaoImpl extends SqlSessionDaoSupport implements Bl_userDao {
 		return update;
 	}
 
+	@Override
+	public Bl_user getbl_userselectid(int id) {
+		Bl_user user= (Bl_user) getSqlSessionFactory().openSession().selectOne("Bl_userMapper.selectid", id);
+		return  user ;
+	}
+
 }

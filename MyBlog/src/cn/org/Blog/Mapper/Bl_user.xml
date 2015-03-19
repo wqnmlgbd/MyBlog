@@ -17,6 +17,10 @@
 	<delete id="delbl_user" parameterType="bl_user">
 		delete from bl_user where id=#{id}
 	</delete>
+	
+	<select id="selectid" resultType="bl_user" >
+		select * from bl_user where id=#{id}
+	</select>
 
 </mapper>
 

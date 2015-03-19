@@ -23,14 +23,16 @@
   
   <body>
     <c:forEach items="${list}" var="l">
-    id:${l.id }--name:${l.name }--password:${l.password }<a href="<%=basePath%>bl_user/del.do?id=${l.id}">删除</a><hr/>
+    id:${l.id }--name:${l.name }--password:${l.password }<a href="<%=basePath%>bl_user/del.do?id=${l.id}">删除</a><a href="<%=basePath%>bl_user/selectid.do?id=${l.id}">修改</a><hr/>
     </c:forEach>
     <div>
-    	<form name="add" action="<%=basePath%>bl_user/add.do" method="post" >
+    	<form name="add" action="<%=basePath%>bl_user/addadd.do" method="post" >
     		名称：<input type="text" name="name" />
     		密码<input type="text" name="password" />
     		<input type="submit" value="提交" />
     	</form>
+    	
+    	
     </div>
   </body>
 </html>

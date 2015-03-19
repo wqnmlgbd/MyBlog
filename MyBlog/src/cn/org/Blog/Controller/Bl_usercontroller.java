@@ -1,5 +1,7 @@
 package cn.org.Blog.Controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
@@ -32,7 +34,7 @@ public class Bl_usercontroller {
 		return "/list.jsp";
 	}
 
-	@RequestMapping("/add")
+	@RequestMapping("/addadd")
 	public ModelAndView findaddbl_user(@RequestParam Bl_user u) {
 		int add = biz.getbizaddbl_user(u);
 		return new ModelAndView("/bl_user/list.do");
@@ -42,6 +44,21 @@ public class Bl_usercontroller {
 	public ModelAndView finddelbl_user(int id) {
 		int i = biz.getbizdelbl_user(id);
 		return new ModelAndView("/bl_user/list.do");
+	}
+
+	@RequestMapping("/update")
+	public ModelAndView findupdatebl_user(Bl_user user) {
+		int updte = biz.getbizupdatebl_user(user);
+		return new ModelAndView("/bl_user/list.do");
+
+	}
+
+	@RequestMapping("/selectid")
+	public String findselectid(int id, Model model) {
+		model.addAttribute("list", biz.getbizselectidbl_user(id));
+		System.out.println(model.getClass().getName());
+		return "/update.jsp";
+
 	}
 
 }

@@ -44,4 +44,9 @@ public class Bl_userBizImpl implements Bl_userBiz {
 		return dao.getbl_userupdate(user);
 	}
 
+	@Override
+	public Bl_user getbizselectidbl_user(int id) {
+		return dao.getbl_userselectid(id);
+	}
+
 }
