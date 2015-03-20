@@ -3,7 +3,9 @@
 <configuration>
 	<!-- 别名 -->
 	<typeAliases>
-		<typeAlias type="cn.org.Blog.Entity.Bl_user" alias="bl_user" />
+		<typeAlias type="cn.org.Model.bl_user" alias="user" />
+		<typeAlias type="cn.org.Model.bl_board" alias="board" />
+		<typeAlias type="cn.org.Model.bl_scrap" alias="scrap" />
 	</typeAliases>
 
 </configuration>

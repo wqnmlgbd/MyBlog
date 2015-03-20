@@ -30,13 +30,13 @@
        <property name="mapperLocations">  
             <list>  
             <!-- 表示在com.hoo.resultmap包或以下所有目录中，以-resultmap.xml结尾所有文件 --> 
-             <value> classpath:cn/org/Blog/Mapper/*.xml</value> 
+             <value> classpath:cn/org/Model/*.xml</value> 
             </list>       
        </property>
     </bean>
     <!-- 通过扫描的模式，扫描目录在com/hoo/mapper目录下，所有的mapper都继承SqlMapper接口的接口， 这样一个bean就可以了 -->  
     <bean  class="org.mybatis.spring.annotation.MapperScannerPostProcessor">  
-       <property name="basePackage" value="cn.org.Blog.Dao"/>  
+       <property name="basePackage" value="cn.org"/>    
        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />  
     </bean>
    

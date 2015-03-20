@@ -22,7 +22,7 @@
   <!--为DispatcherServlet建立映射 -->      
   <servlet-mapping>  
         <servlet-name>springmvc</servlet-name>      
-        <url-pattern>*.do</url-pattern>    
+        <url-pattern>/*</url-pattern>    
   </servlet-mapping> 
   <!-- 解决工程编码过滤器 -->
   <filter>  
