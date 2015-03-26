@@ -5,12 +5,21 @@ import java.io.Serializable;
 public class bl_scrap implements Serializable {
 
 	private int Id;
-	private String Name;
-	private String Author;
-	private String Type;
-	private String Picture;
-	private String Content;
-	private int Page;
+	private String Name; // 标题
+	private String Author; // 发布人
+	private String Type; // 类型
+	private String Picture; // 图片
+	private String Content; // 内容
+	private int Page;//浏览量
+	private String Time;// 更新时间
+
+	public String getTime() {
+		return Time;
+	}
+
+	public void setTime(String time) {
+		Time = time;
+	}
 
 	public int getId() {
 		return Id;

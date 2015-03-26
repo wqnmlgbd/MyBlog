@@ -3,8 +3,8 @@
      "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="UserMapper">
 	<!--登陆 -->
-	<select id="getlogin" resultType="user">
-		select count(*) from bl_user where Name=#{Name} and Password=#{Password}
+	<select id="getlogin"  parameterType="hashmap" resultType="user">
+		select * from bl_user where Name=#{Name} and Password=#{Password}
 	</select>
 
 </mapper>

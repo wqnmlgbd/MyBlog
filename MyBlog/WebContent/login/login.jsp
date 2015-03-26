@@ -153,33 +153,38 @@ $(function(){
 		$("#right_hand").attr("style","right:-112px;top:-12px");
 	});
 });
+
+
 </SCRIPT>
  
-<META name="GENERATOR" content="MSHTML 11.00.9600.17496"></HEAD> 
 <BODY>
 <div class="top_div"></div>
 <div class="top_divtwo">
-	<div style="width: 165px; height: 96px; position: absolute;">
-		<div class="tou"></div>
-		<div class="initial_left_hand" id="left_hand"></div>
-		<div class="initial_right_hand" id="right_hand"></div>
-	</div>
-	<P style="padding: 30px 0px 10px; position: relative;">
-		<span class="u_logo"></span>         
-		<input class="ipt" type="text" placeholder="请输入用户名或邮箱" value=""> 
-	</P>
-	<p style="position: relative;">
-		<span class="p_logo"></span>         
-		<input class="ipt" id="password" type="password" placeholder="请输入密码" value="">   
-	</p>
-	<div class="xd">
-	<P style="margin: 0px 35px 20px 45px;">
-		<span>
-			<a class="zc" href="#">注册</a> 
-			<a class="dl" href="#">登录</a>		
-		</span>         
-	</P>
-	</div>
+	<form method="post" action="<%=basePath%>user/login.do">
+		<div style="width: 165px; height: 96px; position: absolute;">
+			<div class="tou"></div>
+			<div class="initial_left_hand" id="left_hand"></div>
+			<div class="initial_right_hand" id="right_hand"></div>
+		</div>
+		<P style="padding: 30px 0px 10px; position: relative;">
+			<span class="u_logo"></span>         
+			<input class="ipt" type="text" name="name" placeholder="请输入用户名或邮箱" value=""> 
+		</P>
+		<p style="position: relative;">
+			<span class="p_logo"></span>         
+			<input class="ipt" id="password" type="password" name="password"  placeholder="请输入密码" value="">   
+		</p>
+		<div class="xd">
+		<P style="margin: 0px 35px 20px 45px;">
+			<span>
+				 
+				<a class="zc" href="#">注册</a> 
+				<input type="submit" class="dl" value="登录" />
+				 	
+			</span>         
+		</P>
+		</div>
+	</form>
 </div>
 </BODY>
 </HTML>

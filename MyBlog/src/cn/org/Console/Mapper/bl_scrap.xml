@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"      
+     "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ScrapMapper">
+	<insert id="insertblog" parameterType="scrap">
+		INSERT INTO bl_scrap
+		(Name,Author,Type,Picture,Content,Time)
+		VALUES
+		(#{Name},#{Author},#{Type},#{Picture},#{Content},#{Time})
+	</insert>
+
+	<select id="selectscrap" resultType="scrap">
+		select * from bl_scrap
+	</select>
+
+</mapper>

@@ -30,7 +30,8 @@
        <property name="mapperLocations">  
             <list>  
             <!-- 表示在com.hoo.resultmap包或以下所有目录中，以-resultmap.xml结尾所有文件 --> 
-             <value> classpath:cn/org/Model/*.xml</value> 
+             <value> classpath:cn/org/Console/Mapper/*.xml</value>
+             <value> classpath:cn/org/Blog/Mapper/*.xml</value> 
             </list>       
        </property>
     </bean>

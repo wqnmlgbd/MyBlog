@@ -8,6 +8,8 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 
+import cn.org.Common.MD5;
+import cn.org.Common.baseVar;
 import cn.org.Console.Biz.IUserBiz;
 import cn.org.Console.Dao.IUserDao;
 
@@ -26,7 +28,7 @@ public class IUserBizImpl implements IUserBiz {
 	public int bizlog(String name, String password) {
 		Map<String, Object> map = new HashMap<String, Object>();
 		map.put("Name", name);
-		map.put("Password", password);
+		map.put("Password", MD5.Md5(password, baseVar.MD5TYPE16));
 		int login = dao.getlogin(map);
 		return login;
 	}
