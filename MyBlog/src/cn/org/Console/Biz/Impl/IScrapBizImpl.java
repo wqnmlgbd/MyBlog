@@ -43,4 +43,10 @@ public class IScrapBizImpl implements IScrapBiz {
 		return list;
 	}
 
+	@Override
+	public int bizdelblog(int id) {
+		int del = scrapdao.delscrap(id);
+		return del;
+	}
+
 }

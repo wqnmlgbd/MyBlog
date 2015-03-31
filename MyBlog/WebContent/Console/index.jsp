@@ -26,7 +26,7 @@
         <div class="topbar-logo-wrap clearfix">
             <ul class="navbar-list clearfix">
                 <li><a class="on"href="javascript:void(0)" onclick="javascript:document.getElementById('ifrm').src='<%=basePath%>Console/qtmian.jsp'">首页</a></li>
-                <li><a href="<%=basePath%>Blog/index.jsp" target="_blank">博客首页</a></li>
+                <li><a href="<%=basePath%>list.jsp" target="_blank">博客首页</a></li>
             </ul>
         </div>
         <div class="top-info-wrap">
@@ -50,8 +50,7 @@
                     <ul class="sub-menu">
                     	<li><a href="javascript:void(0)" onclick="javascript:document.getElementById('ifrm').src='<%=basePath%>Console/CommonOperate/Blogadd.jsp'"><i class="icon-font">&#xe002;</i>添加博客</a></li>
                         <li><a href="javascript:void(0)" onclick="javascript:document.getElementById('ifrm').src='<%=basePath%>scrap/select.do'"><i class="icon-font">&#xe005;</i>博客管理</a></li>
-                        <li><a href="design.html"><i class="icon-font">&#xe006;</i>分类管理</a></li>
-                        <li><a href="design.html"><i class="icon-font">&#xe004;</i>留言管理</a></li>
+                        <li><a href="javascript:void(0)" onclick="javascript:document.getElementById('ifrm').src='<%=basePath%>Console/CommonOperate/words.jsp'"><i class="icon-font">&#xe004;</i>留言管理</a></li>
                         <li><a href="design.html"><i class="icon-font">&#xe012;</i>评论管理</a></li>
                         <li><a href="design.html"><i class="icon-font">&#xe052;</i>友情链接</a></li>
                         <li><a href="design.html"><i class="icon-font">&#xe033;</i>广告管理</a></li>

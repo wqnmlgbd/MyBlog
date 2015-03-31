@@ -10,7 +10,13 @@
 	</insert>
 
 	<select id="selectscrap" resultType="scrap">
-		select * from bl_scrap
+		select
+		Id,Name,Author,Type,Picture,Content,Time from bl_scrap
 	</select>
+
+	<delete id="delscrap" parameterType="int">
+		DELETE FROM bl_scrap where
+		Id=#{id}
+	</delete>
 
 </mapper>

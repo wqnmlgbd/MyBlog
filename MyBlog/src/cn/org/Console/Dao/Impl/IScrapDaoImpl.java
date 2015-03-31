@@ -24,4 +24,11 @@ public class IScrapDaoImpl extends SqlSessionDaoSupport implements IScrapDao {
 				"ScrapMapper.selectscrap");
 	}
 
+	@Override
+	public int delscrap(int id) {
+		int del = getSqlSessionFactory().openSession().delete(
+				"ScrapMapper.delscrap", id);
+		return del;
+	}
+
 }

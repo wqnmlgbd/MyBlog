@@ -8,4 +8,6 @@ public interface IScrapBiz {
 	public int bizinsertblog(bl_scrap scrap);
 
 	public List bizselectblog();
+	
+	public int bizdelblog(int id);
 }

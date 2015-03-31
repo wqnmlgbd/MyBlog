@@ -9,4 +9,6 @@ public interface IScrapDao {
 	public int insertblog(bl_scrap scrap);
 
 	public List selectscrap();
+
+	public int delscrap(int id);
 }

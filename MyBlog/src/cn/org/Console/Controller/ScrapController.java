@@ -2,6 +2,8 @@ package cn.org.Console.Controller;
 
 import java.util.List;
 
+import javax.servlet.http.HttpServletResponse;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
@@ -35,13 +37,17 @@ public class ScrapController {
 	}
 
 	@RequestMapping("/select.do")
-	public String selectblog(Model model) {
+	public String selectblog(Model model, HttpServletResponse response) {
 		List<bl_scrap> list = scrapbiz.bizselectblog();
-		for(bl_scrap s:list){
-			System.out.println(s.getId()+s.getName());
-		}
 		model.addAttribute("list", list);
+		response.setContentType("applioaction/json");
 		return "/Console/CommonOperate/BlogControl.jsp";
+	}
+
+	@RequestMapping("/del.do")
+	public ModelAndView delscrap(int id) {
+		int del = scrapbiz.bizdelblog(id);
+		return new ModelAndView("/scrap/select.do");
 
 	}
 }
