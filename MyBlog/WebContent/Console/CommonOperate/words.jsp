@@ -43,14 +43,18 @@
 							<th style="text-align: center;">状态</th>
 							<th style="text-align: center;">操作</th>
 						</tr>
-						<c:forEach items="${list}" var="">
+						<c:forEach items="${list}" var="list">
 							<tr style="text-align: center;">
-								<td>${li.id }</td>
-								<td>${li.name }</td>
-								<td>${li.author }</td>
-								<td>${li.type }</td>
-								<td>${li.time }</td>
-								<td>${li.page }</td>
+								<td>${list.id }</td>
+								<td>
+									<img  src="<%=basePath%>Common/img/${list.head }.jpg" alt="图片" style="width: 50px;height: 33px;" />
+								</td>
+								<td>${list.name }</td>
+								<td>${list.qq }</td>
+								<td>${list.content }</td>
+								<td>${list.time }</td>
+								<td>${list.state }</td>
+								
 								<td><a class="link-update" href="#">修改</a> <a
 									class="link-del" href="#">删除</a></td>
 

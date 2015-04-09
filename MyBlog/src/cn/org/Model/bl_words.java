@@ -4,10 +4,10 @@ public class bl_words {
 	private int Id;
 	private String Head;
 	private String Name;
-	private String QQ;
+	private String Qq;
 	private String Content;
 	private String Time;
-	private int Static;
+	private int State;
 
 	public int getId() {
 		return Id;
@@ -33,12 +33,12 @@ public class bl_words {
 		Name = name;
 	}
 
-	public String getQQ() {
-		return QQ;
+	public String getQq() {
+		return Qq;
 	}
 
-	public void setQQ(String qQ) {
-		QQ = qQ;
+	public void setQq(String qq) {
+		Qq = qq;
 	}
 
 	public String getContent() {
@@ -57,12 +57,12 @@ public class bl_words {
 		Time = time;
 	}
 
-	public int getStatic() {
-		return Static;
+	public int getState() {
+		return State;
 	}
 
-	public void setStatic(int static1) {
-		Static = static1;
+	public void setState(int state) {
+		State = state;
 	}
 
 }

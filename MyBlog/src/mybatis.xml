@@ -6,6 +6,7 @@
 		<typeAlias type="cn.org.Model.bl_user" alias="user" />
 		<typeAlias type="cn.org.Model.bl_board" alias="board" />
 		<typeAlias type="cn.org.Model.bl_scrap" alias="scrap" />
+		<typeAlias type="cn.org.Model.bl_words" alias="words" />
 	</typeAliases>
 
 </configuration>
